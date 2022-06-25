@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='public/home/style.css'>
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class='loginbox' id='loginbox'>
+        <div id='loginboxtitle'>
+            <p><b>Encurtador de Link</b></p>
+        </div>
+        <form class='container' action="/set" method="GET">
+            <label><b>URL para re-direcionar</b></label>
+            <input type='url' pattern="(https?:\/\/).+\..+(\/.*)*" placeholder='URL para re-direcionar' name='url' id='url' required>
+
+            <label><b>URL customizada</b></label>
+            <input type="text" pattern="\/.{0,20}" placeholder="Insira uma URL customizada (Opcional)" name='customUrl' id='customurl'>
+            <p></p>
+            <button type="submit" id="send"><span>Gerar</span></button>
+        </form>
+        <!--div class='wrongpass'>
+
+        </div-->
+        <p style='font-size: 14px; top: 93%; left: 45%; transform: translate(-25%, -25%); position: absolute;'>Feito por <link href='https://github.com/cleiton2020'>cleiton#2040</p>
+
+        <script src='public/home/script.js'></script>
+        <!--script src='public/home/ip.js'></script-->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página Inicial</title>
+    <link rel='stylesheet' href='http://localhost:8080/public/view/sidebar/sidebar.css'>
+    <link rel='stylesheet' href='http://localhost:8080/public/view/style.css'>
+    <link rel='stylesheet' href='http://localhost:8080/public/view/painel/home/style.css'>
+    <link rel='stylesheet' href='http://localhost:8080/public/view/painel/acessos/style.css'>
+    <link rel='stylesheet' href='http://localhost:8080/public/view/painel/config/style.css'>
+</head>
+
+<body>
+
+    <script src='http://localhost:8080/public/view/script.js'></script>
+
+    <!----------------Sidebar---------------->
+
+    <script src='http://localhost:8080/public/view/sidebar/sidebar.js'></script>
+    <div class='sidebar'>
+        <span>🔗 URL-Shortener</span>
+        <button class='sidebar-button-show' onclick="execSidebar()">☰</button>
+        <button class='sidebar-buttons' onclick="changePage('home')"><b>Home</b></button>
+        <button class='sidebar-buttons' onclick="changePage('access')"><b>Acessos</b></button>
+        <button class='sidebar-buttons' onclick="changePage('config')"><b>Configurações</b></button>
+        <div class='sidebar-footer'>
+            <a href='https://github.com/cleiton2040'>Feito por cleiton2040</a>
+        </div>
+    </div>
+
+    <div class='painel'>
+        <div class='home'>
+            <div style="position: absolute;">
+                <b style='font-size:40px;'> URL Fantasma<br></b>
+                <a id='home-ghosturl'>Carregando...</a>
+            </div>
+            <div class="">
+                <span style='font-size:40px; border:0;'> <br><br>URL de acesso<br></span>
+                <a id='home-accessurl'><span>Carregando...</span></a>
+            </div>
+            <div>
+                <span style='font-size:40px;'> <br>Acessos<br></span>
+                <a id='home-acessos'>Carregando...</a>
+            </div>
+        </div>
+    </div>
+
+    <div id='R4TkRNNU56Z3dNemsz'
+        style='display: none;color: white;text-align:center;position:absolute;left:0;right:0;top: 0;bottom: 0;background-color: rgba(88, 88, 88, 0.788);'>
+        <div style="font-size: 40px;left:45%;top:50%; position: absolute; transform: translate(-25%, -80%);">
+            <span>Oops! Aconteceu um erro!</span>
+            <span style="font-size: 20px;"><br>Algum parafuso soltou ao tentar acessar este conteúdo!</span>
+            <span id='WpFeU5EYzFOZz09' style="font-size: 15px;"><br></span>
+        </div>
+    </div>
+    <script defer>execSidebar()</script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.sidebar {
+    background-color: #001021;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    transition: 0.5s;
+}
+
+.sidebar-buttons {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 6%;
+    background-color: green;
+    border: 1px solid #001021;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.sidebar-buttons a:hover { 
+    content: '\00bb'; 
+    position: absolute; 
+    opacity: 0; 
+    top: 0; 
+    right: -20px; 
+    transition-duration: 0.5s; 
+}
+
+.sidebar-buttons:hover {
+    background-color:rgba(28, 36, 43, 0.89);
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.sidebar-buttons:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.sidebar-footer {
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
+    left: 0%;  
+    right: 85%;
+}
+
+.sidebar-footer a { font-size: 100%; color:white; }
+
+.sidebar-hidden {
+    background-color: #001021;
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    color: white;
+}
+
+/* sidebar fechada agr*/
+
+.sidebar-button-hidden {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 7%;
+    color:white;
+    background-color: transparent;
+    border: 0px transparent;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.sidebar-button-hidden:hover {
+    background-color: rgb(18, 37, 145);
+    transition-duration: 500ms
+}
+
+.sidebar-button-show {
+    float: right;
+    background-color: inherit;
+    border-color: transparent;
+    color:white;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.sidebar-button-show:hover {
+    background-color: rgb(45, 104, 45);
+}

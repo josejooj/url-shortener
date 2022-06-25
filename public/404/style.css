@@ -1,0 +1,15 @@
+body {
+    background-color: #001021;
+    color: white;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-25%, -25%);
+}
+
+#title {
+    font-size:large;
+}
